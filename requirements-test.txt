@@ -1,0 +1,6 @@
+# For testing
+nose==1.2.1
+HTTPretty==0.5.12
+mock==1.0.1
+
+-r requirements.txt

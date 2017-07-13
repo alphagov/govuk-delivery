@@ -1,0 +1,13 @@
+<subscriber>
+  <email>{{ email|e }}</email>
+  <send-notifications type='boolean'>false</send-notifications>
+  {% if topic_ids %}
+  <topics type='array'>
+    {% for topic_id in topic_ids %}
+      <topic>
+        <code>{{ topic_id|e }}</code>
+      </topic>
+    {% endfor %}
+  </topics>
+  {% endif %}
+</subscriber>

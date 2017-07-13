@@ -1,0 +1,16 @@
+{# This is the minimum viable set of fields to update subscriber topics #}
+<subscriber>
+  <send-notifications type='boolean'>false</send-notifications>
+  {% if topic_ids %}
+    <topics type='array'>
+      {% for topic_id in topic_ids %}
+        <topic>
+          <code>{{ topic_id|e }}</code>
+        </topic>
+      {% endfor %}
+    </topics>
+  {% else %}
+    {# XXX: this case deletes all existing topics! #}
+    <topics type='array' />
+  {% endif %}
+</subscriber>

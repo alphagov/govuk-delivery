@@ -1,0 +1,12 @@
+<bulletin>
+   <subject>{{ subject|e }}</subject>
+   <body><![CDATA[{{ body }}]]></body>
+   <footer><![CDATA[{{ footer }}]]></footer>
+   <topics type='array'>
+     {% for topic in topic_ids %}
+     <topic>
+       <code>{{ topic|e }}</code>
+     </topic>
+     {% endfor %}
+   </topics>
+ </bulletin>

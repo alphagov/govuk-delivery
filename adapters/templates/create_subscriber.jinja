@@ -1,0 +1,5 @@
+{# This is the minimum viable set of fields to create a subscriber #}
+<subscriber>
+  <email>{{ email|e }}</email>
+  <digest-for>{% if frequency == 'daily' %}1{% elif frequency == 'weekly' %}7{% else %}0{% endif %}</digest-for>
+</subscriber>

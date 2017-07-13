@@ -1,0 +1,5 @@
+*.pyc
+venv
+test-venv
+log/*.log
+/production-settings.py
