@@ -1,0 +1,9 @@
+<topic>
+  <categories type='array'>
+    {% for category_id in categories %}
+    <category>
+      <code>{{ category_id|e }}</code>
+    </category>
+    {% endfor %}
+  </categories>
+</topic>

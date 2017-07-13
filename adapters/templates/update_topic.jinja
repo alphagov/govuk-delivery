@@ -1,0 +1,11 @@
+{# This is the minimum viable set of fields to create a topic #}
+<topic>
+  <code>{{ topic_code|e }}</code>
+  <name>{{ name|e }}</name>
+  {% if short_name %}
+  <short-name>{{ short_name|e }}</short-name>
+  {% endif %}
+  {% if visibility %}
+  <visibility>{{ visibility|e }}</visibility>
+  {% endif %}
+</topic>

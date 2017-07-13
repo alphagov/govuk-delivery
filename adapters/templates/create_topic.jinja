@@ -1,0 +1,13 @@
+{# This is the minimum viable set of fields to create a topic #}
+<topic>
+  {% if topic_code %}
+    <code>{{ topic_code|e }}</code>
+  {% endif %}
+  <name>{{ name|e }}</name>
+  <short-name>{{ short_name|e }}</short-name>
+  <visibility>{{ visibility|e }}</visibility>
+  <pagewatch-enabled type="boolean">false</pagewatch-enabled>
+  <rss-feed-url nil="true"></rss-feed-url>
+  <rss-feed-title nil="true"></rss-feed-title>
+  <rss-feed-description nil="true"></rss-feed-description>
+</topic>

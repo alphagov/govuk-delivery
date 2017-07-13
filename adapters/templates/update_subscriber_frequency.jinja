@@ -1,0 +1,5 @@
+<subscriber>
+  <email>{{ email|e }}</email>
+  <send-notifications type='boolean'>false</send-notifications>
+  <digest-for>{% if frequency == 'daily' %}1{% elif frequency == 'weekly' %}7{% else %}0{% endif %}</digest-for>
+</subscriber>
